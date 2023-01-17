@@ -1,7 +1,7 @@
 package frc.sim;
 
 import frc.sim.physics.Force2d;
-import frc.sim.physics.Vector2d;
+import frc.wpilibjfrom2022.Vector2d;
 import frc.sim.physics.ForceAtPose2d;
 
 import java.util.ArrayList;

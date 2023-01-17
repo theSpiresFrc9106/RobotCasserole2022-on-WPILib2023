@@ -9,6 +9,7 @@ import edu.wpi.first.hal.FRCNetComm.tResourceType;
 import edu.wpi.first.wpilibj.IterativeRobotBase;
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.hal.HAL;
+import edu.wpi.first.hal.DriverStationJNI;
 import edu.wpi.first.hal.NotifierJNI;
 import java.util.PriorityQueue;
 
@@ -113,7 +114,7 @@ public class CasseroleTimedRobot extends IterativeRobotBase {
 
     // Tell the DS that the robot is ready to be enabled
     System.out.println("********** Robot program startup complete **********");
-    HAL.observeUserProgramStarting();
+    DriverStationJNI.observeUserProgramStarting();
 
     //Kick off periodic tasking
     addPeriodic(this::loopFunc, this.getPeriod());
